@@ -13,7 +13,7 @@ import gov.usgs.cida.microservices.api.messaging.MicroserviceHandler;
 import gov.usgs.cida.microservices.api.messaging.exception.MqConnectionException;
 import gov.usgs.cida.microservices.messaging.MicroserviceMsgservice;
 
-public class GetMqRequest {
+public class RequestTest {
 
 	/**
 	 * NOT ACTUAL UNIT TEST, used as helper, keep this Ignored and only use if you want to send MQ requests during dev.
@@ -35,7 +35,7 @@ public class GetMqRequest {
 		headers.put("serviceName", MessageConfiguration.MLR_SERVICE_NAME);
 		headers.put("eventType", MessageConfiguration.GET_REQUEST_TOPIC);
 		headers.put("serviceTag", MessageConfiguration.MLR_SERVICE_TAG);
-		headers.put("locationNumber", "012345");
+		headers.put("locationNumber", "00001");
 
 		service.sendMessage(requestId, serviceRequestId, headers, new byte[0]);
 		
@@ -43,7 +43,6 @@ public class GetMqRequest {
 			//wait for data to return from async process
 			Thread.sleep(1000);
 		}
-		
 		System.out.println("received data: " + DataCacheSingleton.getData(requestId));
 		
 		MicroserviceUtils.quietCloseService(testServiceName);

@@ -1,0 +1,7 @@
+/liquibase.properties
+/how_to_run_liquibase.txt
+/liquibase-mlr.properties
+/liquibase-postgres.properties
+/liquibase-roles.properties
+/postgresql-42.0.0.jre7.jar
+/liquibase-data.properties

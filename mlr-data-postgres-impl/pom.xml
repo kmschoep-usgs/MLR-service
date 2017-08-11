@@ -10,7 +10,7 @@
 	<packaging>jar</packaging>
 	<name>MLR Postgres Interface</name>
 	<description>
-	Implementation of the MLR's data persistence layer using postgres.
+		Implementation of the MLR's data persistence layer using postgres.
 	</description>
 
 	<dependencies>

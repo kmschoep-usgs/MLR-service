@@ -9,14 +9,7 @@
 	</parent>
 	<packaging>jar</packaging>
 	<name>MLR Core Libs (Models and Utilitities)</name>
-	
-	<repositories>
-		<repository>
-			<id>cida-third-party</id>
-			<name>CIDA Third Party</name>
-			<url>https://internal.cida.usgs.gov/maven/content/repositories/cida-thirdparty/</url>
-		</repository>
-	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>gov.usgs.cida</groupId>
